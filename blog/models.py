@@ -31,3 +31,4 @@ class Post (models.Model):
   status = models.CharField(max_length=10, choices=options, default='published')
   objects = models.Manager()
   postobjects = PostObjects()
+
