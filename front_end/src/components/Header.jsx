@@ -12,10 +12,23 @@ const useStyles = makeStyles ((theme) => ({
 }));
 
 const Header = () => {
+  const classes = useStyles();
+
   return (
-    <div>
-      Header
-    </div>
+    <>
+      <CssBaseline />
+      <AppBar 
+        position= 'static'
+        color= 'white'
+        elevation= {0}
+        className={classes.appBar}
+      />
+      <Toolbar>
+        <Typography variant="h6" color="inherit" noWrap>
+          Blog Me
+        </Typography>
+      </Toolbar>
+    </>
   )
 }
 
